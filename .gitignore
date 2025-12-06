@@ -1,0 +1,67 @@
+# Gitignore for E-commerce Automation Demo
+
+# MCP Configuration (contains sensitive paths and credentials)
+claude_desktop_config.json
+mcp_config.json
+
+# Database credentials
+.env
+.env.local
+*.env
+
+# Excel files with sensitive data (keep template only)
+data/newdata.xlsx
+*.xlsx
+!data/template.xlsx
+
+# MySQL dumps with real data
+*.sql.backup
+data/backup/
+
+# Playwright
+.playwright/
+playwright-report/
+test-results/
+playwright/.cache/
+
+# Screenshots (if containing sensitive info)
+screenshots/sensitive/
+*.png
+*.jpg
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary files
+tmp/
+temp/
+*.tmp
